@@ -1,0 +1,252 @@
+/* ==========================================================================
+   KAYEE GEUTANYOE CUSTOM STYLE
+   File CSS utama untuk mengatur tampilan website
+   ========================================================================== */
+
+/* ==========================================================================
+   1. PENGATURAN UMUM DAN FONT
+   ========================================================================== */
+
+/* Mengatur jenis font utama, warna teks, dan mencegah scroll horizontal */
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    color: #333333;
+    overflow-x: hidden;
+}
+
+/* ==========================================================================
+   2. HEADER / NAVIGASI
+   ========================================================================== */
+
+/* Mengatur animasi transisi pada navbar */
+.navbar {
+    transition: all 0.3s ease;
+    padding: 15px 0;
+}
+
+/* Gaya logo website */
+.logo {
+    font-size: 24px;
+    letter-spacing: 0.5px;
+}
+
+/* Gaya dasar link navigasi */
+.nav-link {
+    font-weight: 500;
+    color: #555555 !important;
+    transition: color 0.2s ease;
+}
+
+/* Warna link saat hover atau halaman aktif */
+.nav-link:hover, .nav-link.active {
+    color: #198754 !important;
+}
+
+/* ==========================================================================
+   3. AREA HERO / SPANDUK UTAMA
+   ========================================================================== */
+
+/* Memberikan background gradasi pada section hero */
+.hero {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+}
+
+/* Gaya kotak gambar hero */
+.hero-image {
+    background: linear-gradient(135deg, #a8ff78 0%, #78ffd6 100%) !important;
+    color: #2c3e50 !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    border: none !important;
+    transition: transform 0.5s ease;
+}
+
+/* Efek zoom ringan saat gambar hero disentuh cursor */
+.hero-image:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   4. BAGIAN KATEGORI PRODUK
+   ========================================================================== */
+
+/* Gaya dasar setiap item kategori */
+.category-item {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 12px !important;
+    border: 1px solid #e0e0e0 !important;
+}
+
+/* Efek hover pada kategori */
+.category-item:hover {
+    transform: translateY(-5px);
+    background-color: #ffffff !important;
+    border-color: #198754 !important;
+    box-shadow: 0 10px 20px rgba(25, 135, 84, 0.1) !important;
+}
+
+/* ==========================================================================
+   5. KARTU PRODUK TERLARIS
+   ========================================================================== */
+
+/* Gaya dasar kartu produk */
+.product-card {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-radius: 15px !important;
+    overflow: hidden;
+}
+
+/* Wadah gambar produk */
+.product-img {
+
+    /* Mengatur area gambar produk */
+.product-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Membuat gambar memenuhi area secara proporsional */
+.product-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+/* Efek zoom pada gambar ketika kartu di-hover */
+.product-card:hover .product-img img {
+    transform: scale(1.06);
+}
+}
+
+/* Efek hover pada kartu produk */
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* ==========================================================================
+   6. BAGIAN FITUR DAN IKON
+   ========================================================================== */
+
+/* Memberikan efek bayangan ke dalam pada section fitur */
+.features {
+    box-shadow: inset 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Gaya ikon fitur */
+.feature-icon {
+    transition: transform 0.3s ease;
+}
+
+/* Efek animasi saat item fitur disentuh cursor */
+.feature-item:hover .feature-icon {
+    transform: bounce 0.5s infinite alternate;
+    transform: scale(1.2);
+}
+
+/* ==========================================================================
+   7. BAGIAN STATISTIK
+   ========================================================================== */
+
+/* Membuat angka statistik memiliki ukuran digit yang konsisten */
+.stat-number {
+    font-variant-numeric: tabular-nums;
+}
+
+/* Gaya label statistik */
+.stat-label {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   8. FORM HALAMAN KONTAK
+   ========================================================================== */
+
+/* Gaya dasar input dan textarea */
+.form-content {
+    border-radius: 8px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    transition: all 0.2s ease;
+}
+
+/* Efek fokus pada form */
+.form-content:focus {
+    border-color: #198754;
+    box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.25);
+}
+
+/* ==========================================================================
+   9. FOOTER
+   ========================================================================== */
+
+/* Mengatur ukuran dan jarak huruf footer */
+footer {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* ==========================================================================
+   GAYA KHUSUS HALAMAN KONTAK
+   ========================================================================== */
+
+/* Background utama halaman kontak */
+.bg-dark-navy {
+    background-color: #6c9f62 !important;
+}
+
+/* Warna teks deskripsi */
+.text-light-muted {
+    color: #000000 !important;
+}
+
+/* Kartu informasi kontak */
+.contact-card {
+    background-color: #6e8bb9;
+    border: 1px solid #1a2f50;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Efek hover kartu kontak */
+.contact-card:hover {
+    transform: translateY(-5px);
+    border-color: #2a4b7c;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Efek glow khusus pada kartu aktif */
+.contact-card.active-glow {
+    border-color: #1a417a;
+    box-shadow: 0 0 30px rgba(13, 110, 253, 0.15);
+}
+
+/* Kotak pembungkus ikon */
+.icon-box {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    box-shadow: inset 0 2px 5px rgba(255,255,255,0.1);
+}
+
+/* Warna ikon WhatsApp */
+.bg-whatsapp {
+    background: linear-gradient(135deg, #1f944d, #25d366);
+}
+
+/* Warna ikon Google Maps */
+.bg-maps {
+    background: linear-gradient(135deg, #1d2026, #343a40);
+    color: #ea4335;
+}
+
+/* Warna ikon Jam Operasional */
+.bg-clock {
+    background: linear-gradient(135deg, #212529, #495057);
+    color: #ffc107;
+}

@@ -1,0 +1,159 @@
+<!-- Menandakan bahwa dokumen ini menggunakan standar HTML5 terbaru -->
+<!DOCTYPE html>
+<!-- Mengatur bahasa utama dokumen menggunakan Bahasa Indonesia (id) -->
+<html lang="id">
+<head>
+    <!-- Mengatur pengkodean karakter universal agar teks simbol terbaca dengan benar -->
+    <meta charset="UTF-8">
+    <!-- Mengatur area pandang agar website tampil responsif di semua ukuran layar gadget -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul website yang akan muncul pada tab browser -->
+    <title>Kayee Geutanyoe - Beranda</title>
+    <!-- Menghubungkan library Bootstrap 5 CSS dari CDN untuk mempermudah tata letak -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Menghubungkan Font Awesome untuk menampilkan berbagai ikon gratis di halaman web -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Menghubungkan file stylesheet kustom buatan kita sendiri (style.css) -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Komponen Navigasi Atas: menggunakan skema warna terang, menempel di atas, dan bergaris bawah -->
+    <header class="navbar navbar-expand-lg navbar-light bg-white sticky-top border-bottom">
+        <!-- Kontainer pembungkus isi menu agar sejajar secara proporsional di tengah layar -->
+        <div class="container">
+            <!-- Elemen logo brand toko dengan cetak tebal dan berwarna hijau kesuksesan -->
+            <div class="logo navbar-brand fw-bold text-success">Kayee Geutanyoe</div>
+            <!-- Tombol hamburger yang muncul otomatis saat web dibuka melalui layar HP -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <!-- Ikon garis tiga ikonik untuk tombol menu responsive -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Area pembungkus daftar menu yang bisa menyusut/sembunyi di layar kecil -->
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <!-- Daftar tautan menu navigasi berjejer yang digeser otomatis ke arah kanan (ms-auto) -->
+                <ul class="navbar-nav ms-auto">
+                    <!-- Menu Beranda: diatur aktif, dicetak tebal, dan berwarna hijau penanda posisi aktif -->
+                    <li class="nav-item"><a class="nav-link active fw-bold text-success" href="index.html">Beranda</a></li>
+                    <!-- Menu Produk: tautan mengarah ke file produk.html -->
+                    <li class="nav-item"><a class="nav-link" href="produk.html">Produk</a></li>
+                    <!-- Menu Kategori: tautan mengarah ke file kategori.html -->
+                    <li class="nav-item"><a class="nav-link" href="kategori.html">Kategori</a></li>
+                    <!-- Menu Kontak: tautan mengarah ke file kontak.html -->
+                    <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Bagian Banner Utama (Hero): diberi jarak vertikal (py-5) dan berlatar abu-abu terang -->
+    <section class="hero py-5 bg-light">
+        <!-- Kontainer utama penyeimbang konten banner -->
+        <div class="container">
+            <!-- Sistem baris (Grid Bootstrap) untuk membagi area teks kiri dan gambar kanan -->
+            <div class="row align-items-center">
+                <!-- Kolom Kiri: Mengambil ruang setengah layar besar, memberi jarak bawah di layar kecil -->
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <!-- Judul utama berukuran besar, tebal, berwarna gelap, dengan jarak bawah -->
+                    <h1 class="display-4 fw-bold text-dark mb-3">Bangun Tubuh Idealmu Mulai dari Rumah</h1>
+                    <!-- Deskripsi penjelas produk bertekstur teks muted (abu-abu kalem) -->
+                    <p class="lead text-muted mb-4">Peralatan fitness berkualitas premium dengan harga terjangkau. Mulai perjalanan fitness sehat Anda hari ini.</p>
+                    <!-- Tombol aksi utama berwarna hijau besar untuk mengarahkan pengguna ke katalog produk -->
+                    <a href="produk.html" class="btn btn-success btn-lg px-4 py-2">BELANJA SEKARANG</a>
+                </div>
+                <!-- Kolom Kanan: Wadah untuk menampilkan gambar visual utama banner -->
+                <div class="col-md-6">
+                    <!-- Kotak pembungkus gambar hero dengan sudut tumpul, bayangan halus, dan tinggi mutlak 350px -->
+                    <div class="hero-image rounded overflow-hidden shadow-sm" style="height: 350px;">
+                        <!-- Tag pemanggil gambar dari dalam sub-folder 'foto' dengan pengaturan skala penuh yang rapi -->
+                        <img src="foto/Pinto-Aceh_11zon.jpg" alt="Spanduk Kayee Geutanyoe" class="img-fluid w-100 h-100 object-fit-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Nilai Tambah/Fitur Toko: latar belakang hijau dengan teks putih terang -->
+    <section class="features py-4 bg-success text-white">
+        <!-- Kontainer pemosisian baris fitur -->
+        <div class="container">
+            <!-- Baris grid berisi teks rata tengah dengan jarak celah antar kolom (g-3) -->
+            <div class="row text-center g-3">
+                <!-- Kolom Fitur 1: Mengambil sepertiga ruang layar desktop -->
+                <div class="col-md-4 feature-item">
+                    <!-- Memanggil ikon truk pengiriman dengan ukuran dua kali lipat dan berjarak bawah -->
+                    <i class="fa-solid fa-truck fa-2x mb-2 feature-icon"></i>
+                    <!-- Label teks deskripsi penjelas fitur pertama bercetak semi-tebal -->
+                    <p class="mb-0 feature-text fw-semibold">Gratis Pengiriman</p>
+                </div>
+                <!-- Kolom Fitur 2: Mengambil sepertiga ruang layar desktop -->
+                <div class="col-md-4 feature-item">
+                    <!-- Memanggil ikon perisai pelindung garansi -->
+                    <i class="fa-solid fa-shield-halved fa-2x mb-2 feature-icon"></i>
+                    <!-- Label teks deskripsi penjelas fitur kedua -->
+                    <p class="mb-0 feature-text fw-semibold">Garansi 3 Tahun</p>
+                </div>
+                <!-- Kolom Fitur 3: Mengambil sepertiga ruang layar desktop -->
+                <div class="col-md-4 feature-item">
+                    <!-- Memanggil ikon customer service headset -->
+                    <i class="fa-solid fa-headset fa-2x mb-2 feature-icon"></i>
+                    <!-- Label teks deskripsi penjelas fitur ketiga -->
+                    <p class="mb-0 feature-text fw-semibold">Konsultasi Gratis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Angka Statistik Capaian Bisnis: berlatar putih bersih dengan teks rata tengah -->
+    <section class="stats py-5 bg-white text-center">
+        <!-- Kontainer pemosisian baris statistik -->
+        <div class="container">
+            <!-- Baris grid dengan pembagian kolom dinamis (2 kolom di HP, 4 kolom di komputer) -->
+            <div class="row g-4">
+                <!-- Kolom Angka 1 -->
+                <div class="col-6 col-md-3">
+                    <!-- Komponen angka pencapaian: nilai aslinya disimpan dalam properti data-target untuk dibaca JS -->
+                    <span class="stat-number display-5 fw-bold text-success d-block" data-target="8500">0</span>
+                    <!-- Teks keterangan pelabelan dari angka statistik di atas -->
+                    <p class="stat-label text-muted mb-0">Pelanggan Puas</p>
+                </div>
+                <!-- Kolom Angka 2 -->
+                <div class="col-6 col-md-3">
+                    <!-- Angka pencapaian ketersediaan jumlah barang -->
+                    <span class="stat-number display-5 fw-bold text-success d-block" data-target="420">0</span>
+                    <!-- Teks label produk tersedia -->
+                    <p class="stat-label text-muted mb-0">Produk Tersedia</p>
+                </div>
+                <!-- Kolom Angka 3 -->
+                <div class="col-6 col-md-3">
+                    <!-- Angka pencapaian perluasan jaringan wilayah -->
+                    <span class="stat-number display-5 fw-bold text-success d-block" data-target="28">0</span>
+                    <!-- Teks label jangkauan kota -->
+                    <p class="stat-label text-muted mb-0">Kota Terjangkau</p>
+                </div>
+                <!-- Kolom Angka 4 -->
+                <div class="col-6 col-md-3">
+                    <!-- Angka skor nilai rating kepuasan toko -->
+                    <span class="stat-number display-5 fw-bold text-success d-block" data-target="4.8">0</span>
+                    <!-- Teks label rating toko resmi -->
+                    <p class="stat-label text-muted mb-0">Rating Toko</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kaki Web (Footer): berlatar gelap, teks putih, berjarak vertikal tipis, teks rata tengah -->
+    <footer class="bg-dark text-white py-3 text-center">
+        <!-- Kontainer teks hak cipta agar tertata rapi -->
+        <div class="container">
+            <!-- Teks penanda hak cipta (Copyright) resmi bertahun 2026 -->
+            <p class="mb-0">&copy; 2026 Kayee Geutanyoe. Semua hak dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- Menyisipkan file pendukung JavaScript utama milik Bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Menyisipkan file script.js lokal buatan kita untuk menggerakkan animasi angka statistik -->
+    <script src="script.js"></script>
+</body>
+</html>

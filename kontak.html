@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Menentukan karakter UTF-8 agar mendukung berbagai simbol dan huruf -->
+    <meta charset="UTF-8">
+
+    <!-- Membuat tampilan responsif di perangkat mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Judul halaman yang muncul pada tab browser -->
+    <title>Kayee Geutanyoe - Kontak</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- File CSS kustom -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- Body menggunakan tema gelap dan flexbox agar footer selalu di bawah -->
+<body class="bg-dark-navy text-white d-flex flex-column min-vh-100">
+
+    <!-- =====================================================
+         HEADER / MENU NAVIGASI
+         ===================================================== -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark-navy border-bottom border-secondary sticky-top">
+        <div class="container">
+
+            <!-- Logo / Nama Website -->
+            <div class="logo navbar-brand fw-bold text-success">
+                Kayee Geutanyoe
+            </div>
+
+            <!-- Tombol menu untuk tampilan mobile -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu Navigasi -->
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+
+                    <!-- Link Beranda -->
+                    <li class="nav-item">
+                        <a class="nav-link text-light-muted" href="index.html">Beranda</a>
+                    </li>
+
+                    <!-- Link Produk -->
+                    <li class="nav-item">
+                        <a class="nav-link text-light-muted" href="produk.html">Produk</a>
+                    </li>
+
+                    <!-- Link Kategori -->
+                    <li class="nav-item">
+                        <a class="nav-link text-light-muted" href="kategori.html">Kategori</a>
+                    </li>
+
+                    <!-- Link Kontak (halaman aktif) -->
+                    <li class="nav-item">
+                        <a class="nav-link active fw-bold text-white ms-2" href="kontak.html">
+                            Kontak
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =====================================================
+         BAGIAN UTAMA HALAMAN KONTAK
+         ===================================================== -->
+    <main class="py-5 my-auto">
+        <div class="container text-center">
+
+            <!-- Judul halaman -->
+            <h1 class="fw-bold display-5 mb-2">Hubungi Kami</h1>
+
+            <!-- Deskripsi singkat -->
+            <p class="text-light-muted mb-5">
+                Booking sekarang atau kunjungi lokasi kami
+            </p>
+
+            <!-- Grid berisi 3 kartu informasi -->
+            <div class="row g-4 justify-content-center">
+                
+                <!-- ==================================
+                     KARTU 1 : WHATSAPP
+                     ================================== -->
+                <div class="col-md-4">
+
+                    <!-- Link langsung ke WhatsApp -->
+                    <a href="https://wa.me/6281364509146" target="_blank" class="text-decoration-none text-white">
+
+                        <div class="contact-card p-4 rounded-4 h-100 d-flex flex-column align-items-center justify-content-center">
+
+                            <!-- Ikon WhatsApp -->
+                            <div class="icon-box bg-whatsapp mb-3">
+                                <i class="fa-brands fa-whatsapp fa-2x"></i>
+                            </div>
+
+                            <!-- Judul kartu -->
+                            <h3 class="h5 fw-bold mb-2">
+                                Telepon / WhatsApp
+                            </h3>
+
+                            <!-- Nomor WhatsApp -->
+                            <p class="text-light-muted mb-0">
+                                081364509146
+                            </p>
+
+                        </div>
+                    </a>
+                </div>
+
+                <!-- ==================================
+                     KARTU 2 : ALAMAT
+                     ================================== -->
+                <div class="col-md-4">
+
+                    <!-- Kartu alamat dengan efek glow -->
+                    <div class="contact-card p-4 rounded-4 h-100 d-flex flex-column align-items-center justify-content-center active-glow">
+
+                        <!-- Ikon lokasi -->
+                        <div class="icon-box bg-maps mb-3">
+                            <i class="fa-solid fa-location-dot fa-2x"></i>
+                        </div>
+
+                        <!-- Judul kartu -->
+                        <h3 class="h5 fw-bold mb-2">
+                            Alamat
+                        </h3>
+
+                        <!-- Informasi alamat -->
+                        <p class="text-light-muted mb-0">
+                            Jln.Letjen Suprapto, sei raya, Kec. Meral
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- ==================================
+                     KARTU 3 : JAM OPERASIONAL
+                     ================================== -->
+                <div class="col-md-4">
+
+                    <div class="contact-card p-4 rounded-4 h-100 d-flex flex-column align-items-center justify-content-center">
+
+                        <!-- Ikon jam -->
+                        <div class="icon-box bg-clock mb-3">
+                            <i class="fa-regular fa-clock fa-2x"></i>
+                        </div>
+
+                        <!-- Judul kartu -->
+                        <h3 class="h5 fw-bold mb-2">
+                            Jam Operasional
+                        </h3>
+
+                        <!-- Hari operasional -->
+                        <p class="text-light-muted mb-1">
+                            Setiap Hari
+                        </p>
+
+                        <!-- Jam buka -->
+                        <p class="text-light-muted small mb-0">
+                            07:00 - 21:00 WIB
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+         ===================================================== -->
+    <footer class="bg-dark-navy text-white-50 py-4 text-center border-top border-secondary mt-auto">
+        <div class="container">
+
+            <!-- Nama website -->
+            <div class="d-flex align-items-center justify-content-center gap-2 mb-2 text-white fw-semibold">
+                <span class="text-success">Kayee Geutanyoe</span>
+            </div>
+
+            <!-- Copyright -->
+            <p class="mb-0 small">
+                &copy; 2026 Kayee Geutanyoe. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
